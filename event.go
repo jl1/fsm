@@ -31,7 +31,7 @@ type Event struct {
 	// Err is an optional error that can be returned from a callback.
 	Err error
 
-	// Args is a optinal list of arguments passed to the callback.
+	// Args is a optional list of arguments passed to the callback.
 	Args []interface{}
 
 	// canceled is an internal flag set if the transition is canceled.
