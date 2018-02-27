@@ -229,7 +229,7 @@ func (f *FSM) Can(event string) bool {
 	return ok && (f.transition == nil)
 }
 
-// Cannot returns true if event can not occure in the current state.
+// Cannot returns true if event can not occur in the current state.
 // It is a convenience method to help code read nicely.
 func (f *FSM) Cannot(event string) bool {
 	return !f.Can(event)
