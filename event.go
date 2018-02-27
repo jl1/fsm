@@ -42,7 +42,7 @@ type Event struct {
 }
 
 // Cancel can be called in before_<EVENT> or leave_<STATE> to cancel the
-// current transition before it happens. It takes an opitonal error, which will
+// current transition before it happens. It takes an optional error, which will
 // overwrite e.Err if set before.
 func (e *Event) Cancel(err ...error) {
 	e.canceled = true
